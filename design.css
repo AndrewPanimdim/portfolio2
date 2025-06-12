@@ -46,8 +46,8 @@
     font-size: clamp(1rem, 1.5vw, 5rem);
     font-family: Arial, Helvetica, sans-serif;
     position:absolute;
-    right: 5%;
-    top: 40%; 
+    right: 3%;
+    top: 120%; 
     opacity:0;
     font-weight: bold;
     width:65vw;
@@ -55,6 +55,7 @@
     background-color: rgba(0, 0, 255, 0);
     letter-spacing: 0.3vw;
     line-height: 1.4;
+    padding:min(5em, 8%);
     
 }
 
@@ -131,13 +132,13 @@
 /*modular animations for the websites*/
 
 @keyframes slideInLeft {
-      from { transform: translateX(-70%); opacity: 0; }
+      from { transform: translateX(-100%); opacity: 0; }
       to { transform: translateX(0); opacity: 1; }
     }
 
 
 @keyframes slideInRight {
-      from { transform: translateX(7%); opacity: 0; }
+      from { transform: translateX(30%); opacity: 0; }
       to { transform: translateX(0); opacity: 1; }
     } 
 
