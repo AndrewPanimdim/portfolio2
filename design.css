@@ -2,7 +2,6 @@
     position: relative;
     top: 20vh;
     left: 5%;
-    right:5%;
     font-size: clamp(1.8rem, calc(7vw + 1rem), 5rem);
     font-weight:bold;
     font-family:arial;
