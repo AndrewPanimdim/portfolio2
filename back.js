@@ -14,6 +14,7 @@ function AnimationSlideUp(selector, animationClass = 'slideUp', threshold = 0.5)
     }
 
 AnimationSlideUp('#list')
+AnimationSlideUp('#educationContainer')
 
 
 /*function for sliding left contents*/ 

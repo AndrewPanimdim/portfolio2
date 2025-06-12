@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 1.3rem;
+    top: 1%;
     left: 1.5%;
     font-family: arial;
     color: aliceblue;
@@ -80,6 +80,21 @@
 
 }
 
+#educationContainer{
+    font-family:arial;
+    color: white;
+    font-size: clamp(0.8rem, 1.3vw, 5rem);
+    background-color: rgba(23, 22, 22, 0.727);
+    width:43%;
+    height:70%;
+    position:absolute;
+    top:21%;
+    right:3%;
+    z-index:3;
+    border-radius:35px;
+    padding:1vw;
+}
+
 #list {
     color:white;
     position:absolute;
@@ -98,13 +113,16 @@
     animation:fadeInUp 1s ease-out forwards;
 }
 
+
 .slideLeft {
     animation: slideInLeft 1s ease-out forwards;
 }
 
+
 .slideRight {
     animation: slideInRight 1s ease-out forwards;
 }
+
 
 .body{
     background-color: rgb(28, 28, 29);
@@ -127,6 +145,7 @@
     
 }
 
+
 .shape2{
     width:10%;
     height:40%;
@@ -139,6 +158,7 @@
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.629);
     
 }
+
 
 .shape3{
     width:50%;
@@ -167,6 +187,7 @@
     
 }
 
+
 .shape5{
     width:80%;
     height:300px;
@@ -179,6 +200,7 @@
     animation: rotate 50s infinite;
     
 }
+
 
 .shape6 {
     width:20%;
@@ -193,6 +215,8 @@
 }
 
 
+
+
 /*background*/
 
 .background1{
@@ -205,12 +229,6 @@
       z-index: 1;
       
     }
-
-
-
-
-
-
 
 
 
