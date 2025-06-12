@@ -65,11 +65,12 @@
     font-family:arial;
     font-weight:bold;
     position:absolute;
-    top:50%;
+    top:55%;
     z-index:2;
-    width:49vw;
+    width:50vw;
     height:auto;
-    left:25%;
+    right:35%;
+    background-color:rgba(0, 0, 0, 0)
 
 }
 
