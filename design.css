@@ -50,6 +50,12 @@
     top: 40%; 
     opacity:0;
     font-weight: bold;
+    width:65vw;
+    height: 50vw;
+    background-color: rgba(0, 0, 255, 0);
+    letter-spacing: 0.3vw;
+    line-height: 1.4;
+    
 }
 
 
@@ -125,7 +131,7 @@
 /*modular animations for the websites*/
 
 @keyframes slideInLeft {
-      from { transform: translateX(-17%); opacity: 0; }
+      from { transform: translateX(-70%); opacity: 0; }
       to { transform: translateX(0); opacity: 1; }
     }
 
