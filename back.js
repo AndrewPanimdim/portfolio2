@@ -1,4 +1,4 @@
-function Animation(selector, animationClass = 'animate', threshold = 0.5) {
+function Animation(selector, animationClass = 'animate', threshold = 0.4) {
       const element = document.querySelectorAll(selector);
       const observer = new IntersectionObserver((entries, observerInstance) => {
         entries.forEach(entry => {
