@@ -1,20 +1,13 @@
 #greetings{
     position: absolute;
-<<<<<<< HEAD
     top: 3rem;
     left: 5%;
     font-size: clamp(1.8rem, calc(7vw + 2rem), 5rem);
-=======
-    top: 20vh;
-    left: 5%;
-    font-size: clamp(1rem, calc(5vw + 1rem), 5rem);
->>>>>>> 67e54b0dccea9e050613fa98b174a5fef425fe01
     font-weight:bold;
     font-family:arial;
     color: aliceblue;
     animation: slideInLeft 5s forwards;
 }
-
 .body{
     background-color: rgb(28, 28, 29);
 }
