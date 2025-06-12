@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 2rem;
+    top: 1.3rem;
     left: 5%;
     font-family: arial;
     color: aliceblue;
@@ -47,7 +47,12 @@
     position:absolute;
     left: 5px;
     top: 40%; 
+    opacity:0;
+}
 
+
+.animate {
+    animation:fadeInUp 1s ease-out forwards;
 }
 
 
@@ -69,3 +74,8 @@
       to { transform: translateX(0); opacity: 1; }
     } 
 
+    
+@keyframes fadeInUp {
+      from { opacity:0; transform: translateY(30px); }
+      to {opacity:1; transform: translateY(0);}
+    }
