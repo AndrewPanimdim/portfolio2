@@ -45,9 +45,10 @@
     font-size: clamp(1rem, 1.5vw, 5rem);
     font-family: Arial, Helvetica, sans-serif;
     position:absolute;
-    right: 8%;
+    right: 5%;
     top: 40%; 
     opacity:0;
+    font-weight: bold;
 }
 
 
@@ -59,6 +60,35 @@
 .body{
     background-color: rgb(28, 28, 29);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*background shapes*/
+
+.shape1{
+   width:9%;
+   height:10%;
+   background-color: rgb(53, 50, 120); 
+   position:absolute;
+   top:33%;
+   z-index: 0;
+   border-radius: 30px;
+   animation: rotate 13s infinite;
+}
+
+
+
+
 
 
 /*modular animations for the websites*/
@@ -78,4 +108,16 @@
 @keyframes fadeInUp {
       from { opacity:0; transform: translateY(30px); }
       to {opacity:1; transform: translateY(0);}
+    }
+
+/*to rotate */
+@keyframes rotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    
+@keyframes rotaterev {
+      from { transform: rotate(360deg); }
+      to { transform: rotate(180deg); }
     }
