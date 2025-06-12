@@ -14,7 +14,7 @@
 #greetingsLastName {
     font-size: clamp(1rem, calc(7vw + 2.8em), 1400rem);
     font-weight: bold;
-    animation-duration: 5s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
     z-index: 2;
 }
@@ -86,13 +86,14 @@
     font-size: clamp(0.8rem, 1.3vw, 5rem);
     background-color: rgba(23, 22, 22, 0.727);
     width:43%;
-    height:70%;
+    height:50%;
     position:absolute;
     top:21%;
     right:3%;
     z-index:3;
     border-radius:35px;
     padding:1vw;
+    animation-name: slideInRight;
 }
 
 #list {
