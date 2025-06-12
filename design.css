@@ -47,29 +47,44 @@
     font-family: Arial, Helvetica, sans-serif;
     position:absolute;
     right: 1%;
-    top: 95%; 
+    top: 45%; 
     opacity:0;
     font-weight: bold;
-    width:65vw;
+    width:55vw;
     height: 20vw;
-    background-color: rgba(0, 0, 255, 0);
+    background-color: rgba(0, 0, 0, 0);
     letter-spacing: 0.3vw;
     line-height: 1.4;
-    padding:min(5em, 8%);
-    z-index:1;
+    z-index:2;
     
 }
 
+#hello {
+    color: aliceblue;
+    font-size: clamp(1.8rem, calc(5vw + 1.2rem), 5rem);
+    font-family:arial;
+    font-weight:bold;
+    position:absolute;
+    top:50%;
+    z-index:2;
+    width:49vw;
+    height:auto;
+    left:25%;
 
-.animate {
-    animation:fadeInUp 1s ease-out forwards;
 }
 
 
+.slideUp {
+    animation:fadeInUp 1s ease-out forwards;
+}
 
+.slideLeft {
+    animation: slideInLeft 1s ease-out forwards;
+}
 
-
-
+.slideRight {
+    animation: slideInright 1s ease-out forwards;
+}
 
 .body{
     background-color: rgb(28, 28, 29);
@@ -77,20 +92,18 @@
 
 
 
-
-
-
 /*background shapes*/
 
 .shape1{
     width:9%;
-    height:10%;
+    height:200px;
     background-color: rgb(53, 50, 120); 
     position:absolute;
-    top:33%;
+    top:30%;
+    left:-10px;
     z-index: 0;
-    border-radius: 15rem;
-    animation: rotate 18s infinite;
+    border-radius: 25px;
+
 }
 
 
@@ -102,12 +115,12 @@
     top:51%;
     z-index: 0;
     border-radius: 12px;
-    animation: rotaterev 10s infinite;
+    
 }
 
 
 .shape3{
-    width:60%;
+    width:30%;
     height:25%;
     background-color: rgb(52, 231, 207); 
     position:absolute;
@@ -144,16 +157,27 @@
 }
 
 
+#shape10{
+    width:5rem;
+    height:5rem;
+    position:absolute;
+    border-radius:25px;
+    background-color:rgb(75, 133, 195);
+    z-index:2;
+    top: 35%; 
+
+}
+
 /*background*/
 
 .background1{
     position:absolute;
-      top: 20%;
+      top: 10%;
       left: 0px;
       height:180%;
       width: 100%;
-      background: linear-gradient(to bottom, #e3b97f00, #030e3a, #e3b97f00);
-      z-index: -1;
+      background: linear-gradient(to bottom, #e3b97f00, #081548, #00000000);
+      z-index: 1;
       
     }
 
@@ -169,7 +193,7 @@
 /*modular animations for the websites*/
 
 @keyframes slideInLeft {
-      from { transform: translateX(-100%); opacity: 0; }
+      from { transform: translateX(-60%); opacity: 0; }
       to { transform: translateX(0); opacity: 1; }
     }
 
