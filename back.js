@@ -13,7 +13,7 @@ function AnimationSlideUp(selector, animationClass = 'slideUp', threshold = 0.5)
       element.forEach(el => observer.observe(el));
     }
 
-AnimationSlideUp('#furthermore')
+AnimationSlideUp('#list')
 
 
 /*function for sliding left contents*/ 
@@ -32,6 +32,7 @@ function AnimationSlideInLeft(selector, animationClass = 'slideLeft', threshold 
 }
 
 AnimationSlideInLeft('#hello');
+AnimationSlideInLeft('#furthermore')
 
 
 /*function for sliding right contents*/ 

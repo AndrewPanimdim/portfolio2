@@ -80,6 +80,19 @@
 
 }
 
+#list {
+    color:white;
+    position:absolute;
+    top:204%;
+    right:25%;
+    z-index:2;
+    font-size: clamp(1rem, 1.5vw, 5rem);
+    font-family:arial;
+    font-weight:bold;
+    line-height: 1.4;
+    letter-spacing: 0.3vw;
+
+}
 
 .slideUp {
     animation:fadeInUp 1s ease-out forwards;
@@ -101,7 +114,31 @@
 
 /*background shapes*/
 
+.shape1 {
+    width:80%;
+    height:300px;
+    background-color: rgb(68, 19, 84); 
+    position:absolute;
+    top:70%;
+    left:-10%;
+    z-index: -1;
+    border-radius:45px;
+    animation: rotate 30s infinite;
+    
+}
 
+.shape2{
+    width:10%;
+    height:40%;
+    background-color: rgb(204, 137, 60); 
+    position:absolute;
+    top:120%;
+    left:-3%;
+    z-index: 3;
+    border-radius: 25px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.629);
+    
+}
 
 .shape3{
     width:50%;
@@ -113,20 +150,22 @@
     z-index: 0;
     border-radius:30px;
     animation: rotaterev 69s infinite;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.629);
 }
 
 
 .shape4{
-    width:60px;
-    height:25%;
+    width:14%;
+    height:45%;
     background-color: rgb(152, 148, 238); 
     position:absolute;
     top:150%;
-    z-index: 0;
-    border-radius: 5rem;
-    animation: rotaterev 20s infinite;
+    left:-1%;
+    z-index: 2;
+    border-radius: 25px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.629);
+    
 }
-
 
 .shape5{
     width:80%;
@@ -134,10 +173,23 @@
     background-color: rgb(52, 116, 185); 
     position:absolute;
     top:-10%;
-    left:-10%;
-    z-index: 0;
+    left:-40%;
+    z-index: -1;
     border-radius:45px;
     animation: rotate 50s infinite;
+    
+}
+
+.shape6 {
+    width:20%;
+    height:20%;
+    background-color: rgb(148, 235, 238); 
+    position:absolute;
+    top:170%;
+    left:1%;
+    z-index: 2;
+    border-radius: 25px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.629);
 }
 
 
