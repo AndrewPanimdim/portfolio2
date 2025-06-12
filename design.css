@@ -1,13 +1,23 @@
-#greetings{
-    position: absolute;
-    top: 3rem;
-    left: 5%;
-    font-size: clamp(1.8rem, calc(7vw + 3rem), 5rem);
-    font-weight:bold;
-    font-family:arial;
-    color: aliceblue;
-    animation: slideInLeft 5s forwards;
+#greetings {
+  display: flex;
+  position: absolute;
+  top: 3rem;
+  left: 5%;
+  font-size: clamp(1.8rem, calc(7vw + 3rem), 5rem);
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  color: aliceblue;
 }
+
+#greetingsFirstName {
+  animation: slideInLeft 2.5s forwards;
+}
+
+#greetingsLastName {
+  animation: slideInRight 2.5s forwards;
+  margin-left: 0.5rem; /* optional spacing */
+}
+
 
 #greetingbackground{
     position:absolute;
@@ -15,7 +25,7 @@
     top:0px;
     width: 100%;
     height: 25%;
-    background-color: rgb(16, 16, 16)
+    background-color: rgb(12, 12, 12)
 
 }
 
@@ -24,7 +34,7 @@
     font-size: 5rem;
     font-family: Arial, Helvetica, sans-serif;
     position:absolute;
-    left: 50%;
+    left: 5px;
     top: 50%; 
 
 }
@@ -34,7 +44,14 @@
 }
 
 /*modular animations for the websites*/
+
 @keyframes slideInLeft {
-      from { transform: translateX(4%); opacity: 0; }
+      from { transform: translateX(-17%); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+
+@keyframes slideInRight {
+      from { transform: translateX(6%); opacity: 0; }
       to { transform: translateX(0); opacity: 1; }
     } 
+
