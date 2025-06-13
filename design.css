@@ -30,7 +30,7 @@
 }
 
 
-#Python, #Java {
+#Python, #Java, #Javascript {
     padding: 1vw;
     border-radius: 2.5vw;
     box-shadow: 0 9px 9px rgba(0, 0, 0, 0.607);
@@ -46,18 +46,50 @@
     z-index:3;
 }
 
+
+
+
+/*language buttons*/
+
 #Python {
     background-color:rgb(34, 59, 121);
     position: absolute;
     right:5%;
     top:25%;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-name: slideInUp;
+    animation-delay:2s;
+    opacity:0;
+    
 }
 
 #Java {
     background-color:rgb(218, 76, 41);
     position: absolute;
-    right:25%;
+    right:30%;
     top:25%;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-name: slideInDown;
+    animation-delay:1s;
+    opacity:0;
+    
+}
+
+#Javascript {
+    background-color:rgb(239, 179, 116);
+    position: absolute;
+    right:5%;
+    top:40%;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-name: slideInUp;
+    animation-delay:1s;
+    opacity:0;
+    padding:1vw;
+    font-size: clamp(0.7rem, 2.3vw, 5rem);
+
 }
 
 
@@ -139,7 +171,7 @@
 
 
 .slideUp {
-    animation:fadeInUp 1s ease-out forwards;
+    animation:slideInUp 1s ease-out forwards;
 }
 
 
@@ -276,10 +308,16 @@
     } 
 
 
-@keyframes fadeInUp {
+@keyframes slideInUp {
       from { opacity:0; transform: translateY(30px); }
       to {opacity:1; transform: translateY(0);}
     }
+
+@keyframes slideInDown {
+      from { opacity:0; transform: translateY(-30px); }
+      to {opacity:1; transform: translateY(0);}
+    }
+
 
 /*to rotate */
 @keyframes rotate {
