@@ -14,7 +14,7 @@ function AnimationSlideUp(selector, animationClass = 'slideUp', threshold = 0.5)
     }
 
 AnimationSlideUp('#list')
-AnimationSlideUp('#educationContainer')
+AnimationSlideUp('#LanguageContainer')
 
 
 /*function for sliding left contents*/ 
@@ -52,3 +52,7 @@ function AnimationSlideInRight(selector, animationClass = 'slideRight', threshol
 }
 
 AnimationSlideInRight('#AndrewsInformation');
+
+
+
+/*function for language buttons */

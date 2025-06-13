@@ -80,12 +80,12 @@
 
 }
 
-#educationContainer{
+#LanguageContainer{
     font-family:arial;
     color: white;
     font-size: clamp(0.8rem, 1.3vw, 5rem);
     background-color: rgba(23, 22, 22, 0.727);
-    width:43%;
+    width:38%;
     height:50%;
     position:absolute;
     top:30%;
@@ -94,21 +94,30 @@
     border-radius:35px;
     padding:1vw;
     animation-name: slideInRight;
+    padding:2vw 3vw;
 }
 
-#list {
-    color:white;
-    position:absolute;
-    top:204%;
-    right:25%;
-    z-index:2;
-    font-size: clamp(1rem, 1.5vw, 5rem);
-    font-family:arial;
-    font-weight:bold;
-    line-height: 1.4;
-    letter-spacing: 0.3vw;
 
+#Python {
+    background-color:rgb(31, 17, 57);
+    padding: 1vw;
+    border-radius: 1vw;
+    position: absolute;
+    left:3%;
+    top:4%;
+    box-shadow: 0 9px 9px rgba(0, 0, 0, 0.2);
+    font-size: clamp(0.8rem, 1.3vw, 5rem);
+    width:10%; 
+    height:10%;
 }
+
+
+
+
+
+
+
+
 
 .slideUp {
     animation:fadeInUp 1s ease-out forwards;
