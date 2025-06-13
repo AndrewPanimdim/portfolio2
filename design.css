@@ -134,19 +134,6 @@
 
 }
 
-.scrollable-div {
-  height: 200px; 
-  width:100%;        /* Set a fixed height */
-  overflow-y: auto;      /* Adds vertical scroll if needed */
-  border: 1px solid #cccccc00;
-  padding: 10px;
-  position:absolute;
-  top:170%;
-  left:0%;
-  z-index:4;
-  text-align:center;
-  color:white;
-}
 
 
 
