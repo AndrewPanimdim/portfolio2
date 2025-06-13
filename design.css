@@ -30,6 +30,41 @@
 }
 
 
+#Python, #Java {
+    padding: 1vw;
+    border-radius: 2.5vw;
+    box-shadow: 0 9px 9px rgba(0, 0, 0, 0.607);
+    font-size: clamp(1rem, 2.3vw, 5rem);
+    width:15%; 
+    height:8%;
+    color:white;
+    font-family:arial;
+    font-weight:bold;
+    justify-content:center;
+    display:flex;
+    align-items:center;
+    z-index:3;
+}
+
+#Python {
+    background-color:rgb(34, 59, 121);
+    position: absolute;
+    right:5%;
+    top:25%;
+}
+
+#Java {
+    background-color:rgb(218, 76, 41);
+    position: absolute;
+    right:25%;
+    top:25%;
+}
+
+
+
+
+
+
 
 
 
@@ -80,7 +115,7 @@
 
 }
 
-#LanguageContainer{
+#Container1{
     font-family:arial;
     color: white;
     font-size: clamp(0.8rem, 1.3vw, 5rem);
@@ -88,7 +123,7 @@
     width:38%;
     height:50%;
     position:absolute;
-    top:30%;
+    top:220%;
     right:3%;
     z-index:3;
     border-radius:35px;
@@ -96,22 +131,6 @@
     animation-name: slideInRight;
     padding:2vw 3vw;
 }
-
-
-#Python {
-    background-color:rgb(31, 17, 57);
-    padding: 1vw;
-    border-radius: 1vw;
-    position: absolute;
-    left:3%;
-    top:4%;
-    box-shadow: 0 9px 9px rgba(0, 0, 0, 0.2);
-    font-size: clamp(0.8rem, 1.3vw, 5rem);
-    width:10%; 
-    height:10%;
-}
-
-
 
 
 
