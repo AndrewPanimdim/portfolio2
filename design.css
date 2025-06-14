@@ -14,7 +14,7 @@
 #greetingsLastName {
     font-size: clamp(1rem, calc(7vw + 2.8em), 1400rem);
     font-weight: bold;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
     z-index: 2;
 }
@@ -57,7 +57,7 @@
     animation-duration: 1s;
     animation-fill-mode: forwards;
     animation-name: slideInDown;
-    animation-delay:3s;
+    animation-delay:2.1s;
     opacity:0;
     right:30%;
     top:25%;
@@ -72,7 +72,7 @@
     animation-duration: 1s;
     animation-fill-mode: forwards;
     animation-name: slideInUp;
-    animation-delay:2.5s;
+    animation-delay:1.7s;
     opacity:0;
     
 }
@@ -85,7 +85,7 @@
     animation-duration: 1s;
     animation-fill-mode: forwards;
     animation-name: slideInUp;
-    animation-delay:2s;
+    animation-delay:1.3s;
     opacity:0;
     padding:1vw;
     font-size: clamp(0.7rem, 2.3vw, 5rem);
@@ -100,7 +100,7 @@
     animation-duration: 1s;
     animation-fill-mode: forwards;
     animation-name: slideInUp;
-    animation-delay:1s;
+    animation-delay:0.5s;
     opacity:0;
 }
 
@@ -112,9 +112,47 @@
     animation-duration: 1s;
     animation-fill-mode: forwards;
     animation-name: slideInUp;
-    animation-delay:1.5s;
+    animation-delay:0.9s;
     opacity:0;
     
+}
+
+
+#guider{
+    position:absolute;
+    top:0%;
+    left:1.2%;
+    width:0.1%;
+    height:220%;
+    background-color:hsla(228, 7%, 85%, 0.885);
+    z-index:1;
+
+}
+
+#locator{
+    position:fixed;
+    top:45%;
+    left:1%;
+    width:0.5%;
+    height:10%;
+    border-radius: 90%;
+    
+    background-color:hsla(40, 98%, 46%, 0.995);
+    z-index:2;
+
+}
+
+
+#guider2{
+    position:absolute;
+    top:0%;
+    left:5%;
+    width:0.1%;
+    height:220%;
+    background-color:hsla(180, 100%, 97%, 0.129);
+    z-index:1;
+    opacity:0;
+
 }
 
 
