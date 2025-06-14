@@ -53,6 +53,9 @@ function AnimationSlideInRight(selector, animationClass = 'slideRight', threshol
 
 AnimationSlideInRight('#AndrewsInformation');
 
+
+
+/*FUNCTION FOR THE OVERLAY  */
 const overlay = document.getElementById('overlay');
 
 window.addEventListener('scroll', () => {
