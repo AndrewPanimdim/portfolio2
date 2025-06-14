@@ -26,11 +26,11 @@
 
 
 #greetingsLastName {
-    animation-name: slideInRight;
+    animation-name: slideInRightGreetings;
 }
 
 
-#Python, #Java, #Javascript {
+#Python, #Java, #Javascript, #HTML, #CSS {
     padding: 1vw;
     border-radius: 2.5vw;
     box-shadow: 0 9px 9px rgba(0, 0, 0, 0.607);
@@ -47,8 +47,6 @@
 }
 
 
-
-
 /*language buttons*/
 
 #Python {
@@ -58,21 +56,23 @@
     top:25%;
     animation-duration: 1s;
     animation-fill-mode: forwards;
-    animation-name: slideInUp;
-    animation-delay:2s;
+    animation-name: slideInDown;
+    animation-delay:3s;
     opacity:0;
+    right:30%;
+    top:25%;
     
 }
 
 #Java {
     background-color:rgb(218, 76, 41);
     position: absolute;
-    right:30%;
+    right:5%;
     top:25%;
     animation-duration: 1s;
     animation-fill-mode: forwards;
-    animation-name: slideInDown;
-    animation-delay:1s;
+    animation-name: slideInUp;
+    animation-delay:2.5s;
     opacity:0;
     
 }
@@ -85,11 +85,36 @@
     animation-duration: 1s;
     animation-fill-mode: forwards;
     animation-name: slideInUp;
-    animation-delay:1s;
+    animation-delay:2s;
     opacity:0;
     padding:1vw;
     font-size: clamp(0.7rem, 2.3vw, 5rem);
 
+}
+
+#HTML {
+    background-color:rgb(224, 118, 92);
+    position: absolute;
+    right:5%;
+    top:70%;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-name: slideInUp;
+    animation-delay:1s;
+    opacity:0;
+}
+
+#CSS {
+    background-color:rgb(34, 128, 156);
+    position: absolute;
+    right:5%;
+    top:55%;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-name: slideInUp;
+    animation-delay:1.5s;
+    opacity:0;
+    
 }
 
 
@@ -97,8 +122,7 @@
 
 
 
-
-
+/* hello im andrew and im an aspiring full stack developer*/
 
 #AndrewsInformation{
     color: aliceblue;
@@ -115,6 +139,7 @@
     line-height: 1.4;
     z-index:2;
     opacity:0;
+    animation-delay:1.5s;
     
 }
 
@@ -131,7 +156,7 @@
     right:25%;
     background-color:rgba(0, 0, 0, 0);
     opacity:0;
-
+    animation-delay:0.5s;
 }
 
 
@@ -316,6 +341,11 @@
 
 
 @keyframes slideInRight {
+      from { transform: translateX(1.5%); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    } 
+
+@keyframes slideInRightGreetings{
       from { transform: translateX(30%); opacity: 0; }
       to { transform: translateX(0); opacity: 1; }
     } 
