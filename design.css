@@ -125,7 +125,7 @@
     width:0.1%;
     height:220%;
     background-color:hsla(228, 7%, 85%, 0.885);
-    z-index:1;
+    z-index:0;
 
 }
 
@@ -137,7 +137,7 @@
     height:20%;
     border-radius: 90%;
     background-color:hsla(40, 98%, 46%, 0.995);
-    z-index:2;
+    z-index:1;
 
 }
 
@@ -172,7 +172,7 @@
     width:100%;
     left:0%;
     height:10%;
-    background-color:rgba(44, 43, 43, 0.433);
+    background-color:rgba(44, 43, 43, 0.027);
 }
 
 .linkedin {
