@@ -131,29 +131,18 @@
 
 #locator{
     position:fixed;
-    top:45%;
+    top:27%;
     left:1%;
     width:0.5%;
-    height:10%;
+    height:20%;
     border-radius: 90%;
-    
     background-color:hsla(40, 98%, 46%, 0.995);
     z-index:2;
 
 }
 
 
-#guider2{
-    position:absolute;
-    top:0%;
-    left:5%;
-    width:0.1%;
-    height:220%;
-    background-color:hsla(180, 100%, 97%, 0.129);
-    z-index:1;
-    opacity:0;
 
-}
 
 
 #overlay {
@@ -166,6 +155,7 @@
     z-index:4;
     animation: slideInUp 1s ease-out forwards;
     transition: bottom 0.5s ease-in-out;
+    color:white;
 }
 
 #overlay.visible {
@@ -175,6 +165,22 @@
     height:100%;
 }
 
+
+#contacts{
+    position:absolute;
+    bottom:0%;
+    width:100%;
+    left:0%;
+    height:10%;
+    background-color:rgba(44, 43, 43, 0.433);
+}
+
+.linkedin {
+    position: absolute;
+    right: 5%;
+    bottom:27%;
+    
+}
 
 
 /* hello im andrew and im an aspiring full stack developer*/
