@@ -220,7 +220,7 @@
     font-family: Arial, Helvetica, sans-serif;
     position:absolute;
     right: 1%;
-    top: 120%; 
+    top: 126%; 
     font-weight: bold;
     width:55vw;
     height: 20vw;
@@ -235,7 +235,7 @@
 
 #hello {
     color: aliceblue;
-    font-size: clamp(1.6rem, calc(5vw + 1.2rem), 8rem);
+    font-size: clamp(1.8rem, calc(5vw + 1.2rem), 5rem);
     font-family:arial;
     font-weight:bold;
     position:absolute;
