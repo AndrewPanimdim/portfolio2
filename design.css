@@ -57,7 +57,7 @@
     animation-duration: 1s;
     animation-fill-mode: forwards;
     animation-name: slideInDown;
-    animation-delay:2.1s;
+    animation-delay:0.8s;
     opacity:0;
     right:30%;
     top:25%;
@@ -72,7 +72,7 @@
     animation-duration: 1s;
     animation-fill-mode: forwards;
     animation-name: slideInUp;
-    animation-delay:1.7s;
+    animation-delay:0.6s;
     opacity:0;
     
 }
@@ -85,7 +85,7 @@
     animation-duration: 1s;
     animation-fill-mode: forwards;
     animation-name: slideInUp;
-    animation-delay:1.3s;
+    animation-delay:0.4s;
     opacity:0;
     padding:1vw;
     font-size: clamp(0.7rem, 2.3vw, 5rem);
@@ -100,7 +100,7 @@
     animation-duration: 1s;
     animation-fill-mode: forwards;
     animation-name: slideInUp;
-    animation-delay:0.5s;
+    animation-delay:0s;
     opacity:0;
 }
 
@@ -112,15 +112,36 @@
     animation-duration: 1s;
     animation-fill-mode: forwards;
     animation-name: slideInUp;
-    animation-delay:0.9s;
+    animation-delay:0.2s;
     opacity:0;
     
 }
 
+/*home navigation*/
 
+#Projects {
+    background-color:rgb(62, 40, 69);
+    width:15vw;
+    height:90px;
+    position:absolute;
+    right: 5%;
+    top:25%;
+    border-radius: 40vw;
+    z-index: 3;
+    box-shadow: 0 9px 9px rgba(0, 0, 0, 0.607);
+    justify-content:center;
+    display:flex;
+    align-items:center;
+    color:white;
+    font-family:arial;
+    font-weight:bold;
+    font-size: clamp(0.5rem, 3vw, 2.5rem);
+    animation: slideInUp 1s ease-out forwards;
+    transition: right 0.1s ease-in-out;
 
+}
 
-
+/*bottom overlay*/
 
 #overlay {
     position:fixed;
@@ -209,10 +230,6 @@
 
 
 /* hello im andrew and im an aspiring full stack developer*/
-#helloContainer {
-    padding:min(5em, 8%);
-}
-
 
 #AndrewsInformation{
     color: aliceblue;
