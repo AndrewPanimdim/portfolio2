@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    html, body {
+      margin: 0;
+      overflow: hidden;
+      height: 100vh;
+    }
+
+    #container {
+      height: 300vh; /* Total height for 3 screens */
+      transition: transform 0.5s ease;
+    }
+
+    .section {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2em;
+      color: white;
+    }
+
+    .one { background: tomato; }
+    .two { background: teal; }
+    .three { background: rebeccapurple; }
+
+    .clickable {
+      background: white;
+      color: black;
+      padding: 1em 2em;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<div id="container">
+  <div class="section one">
+    <div class="clickable" onclick="goUp200()">Click to go up -200%</div>
+  </div>
+  <div class="section two">Second Screen</div>
+  <div class="section three">Third Screen</div>
+</div>
+
+<script>
+  function goUp200() {
+    const container = document.getElementById("container");
+    container.style.transform = "translateY(-200vh)";
+  }
+</script>
+
+</body>
+</html>

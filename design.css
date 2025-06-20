@@ -127,7 +127,7 @@
     right: 5%;
     top:25%;
     border-radius: 40vw;
-    z-index: 3;
+    z-index: 5;
     box-shadow: 0 9px 9px rgba(0, 0, 0, 0.607);
     justify-content:center;
     display:flex;
@@ -138,6 +138,7 @@
     font-size: clamp(0.5rem, 3vw, 2.5rem);
     animation: slideInUp 1s ease-out forwards;
     transition: right 0.1s ease-in-out;
+    cursor: pointer;
 }
 
 /*bottom overlay*/

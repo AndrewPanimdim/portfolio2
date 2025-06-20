@@ -36,6 +36,17 @@ AnimationSlideInLeft('#hello');
 AnimationSlideInLeft('#furthermore')
 
 
+/*navigation function*/
+
+const projectsButton = document.getElementById('Projects');
+const overlay1 = document.getElementById('overlay');
+
+projectsButton.addEventListener('click', () => {
+  // Toggle the visibility class on the overlay
+  overlay1.classList.toggle('visible');
+});
+
+
 /*function for sliding right contents*/ 
 
 function AnimationSlideInRight(selector, animationClass = 'slideRight', threshold = 0.5) {
