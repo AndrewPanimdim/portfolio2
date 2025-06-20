@@ -1,6 +1,6 @@
 
 /*function for sliding up contents*/ 
-function AnimationSlideUp(selector, animationClass = 'slideUp', threshold = 0.5) {
+function AnimationSlideUp(selector, animationClass = 'slideUp', threshold = 0.3) {
       const element = document.querySelectorAll(selector);
       const observer = new IntersectionObserver((entries, observerInstance) => {
         entries.forEach(entry => {
