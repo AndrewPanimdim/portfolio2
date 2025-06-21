@@ -75,7 +75,7 @@ AnimationSlideInRight('#AndrewsInformation');
 
 
 
-/*FUNCTION FOR THE OVERLAY  */
+/*FUNCTION FOR THE OVERLAY  
 const overlay = document.getElementById('overlay');
 
 window.addEventListener('scroll', () => {
