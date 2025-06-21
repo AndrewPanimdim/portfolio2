@@ -36,26 +36,6 @@ AnimationSlideInLeft('#hello');
 AnimationSlideInLeft('#furthermore')
 
 
-/*navigation function*/
-
-const projectsButton = document.getElementById('More');
-const overlay1 = document.getElementById('overlay');
-
-projectsButton.addEventListener('click', () => {
-  // Toggle the visibility class on the overlay
-  overlay1.classList.toggle('visible');
-});
-
-const changetext = document.getElementById('More');
-changetext.addEventListener('click', ()=> {
-  if (changetext.textContent === 'More') {
-    changetext.textContent = 'back';
-  }else{
-    changetext.textContent ='More';
-  }
-})
-
-
 /*function for sliding right contents*/ 
 
 function AnimationSlideInRight(selector, animationClass = 'slideRight', threshold = 0.5) {
@@ -74,17 +54,3 @@ function AnimationSlideInRight(selector, animationClass = 'slideRight', threshol
 AnimationSlideInRight('#AndrewsInformation');
 
 
-
-/*FUNCTION FOR THE OVERLAY  
-const overlay = document.getElementById('overlay');
-
-window.addEventListener('scroll', () => {
-  if(window.scrollY > 800) {
-    overlay.classList.add('visible');
-  } else {
-    overlay.classList.remove('visible');
-  }
-})
-
-
-/*function for language buttons */
