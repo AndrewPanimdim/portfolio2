@@ -29,6 +29,17 @@
     animation-name: slideInRightGreetings;
 }
 
+#BriefInfo {
+    position:absolute;
+    top:25%;
+    right:2%;
+    background-color:rgba(74, 71, 71, 0.344);
+    width:47vw;
+    height:300px;
+    border-radius:45px;
+    z-index: 4;
+}
+
 
 #Python, #Java, #Javascript, #HTML, #CSS {
     padding: 1vw;
@@ -124,7 +135,7 @@
     width:15vw;
     height:80px;
     position:absolute;
-    right: 1%;
+    right: 2%;
     top:3%;
     border-radius: 40vw;
     z-index: 5;
@@ -182,7 +193,7 @@
     z-index:3;
 }
 
-.schoolbutton:hover, .personalbutton:hover, .contactsbutton:hover, #More:hover {
+.schoolbutton:hover, .personalbutton:hover, .contactsbutton:hover {
     background-color: rgba(255, 255, 255, 0.2);
     transition: background-color 0.3s ease-in-out;
     cursor: pointer;
