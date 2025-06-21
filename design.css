@@ -45,10 +45,10 @@
 
 #More {
     background-color:rgb(62, 40, 69);
-    width: 50px;
+    width: 60px;
     height: 50px;
     position:absolute;
-    right: 3%;
+    right: 7%;
     top:20%;
     border-radius: 40vw;
     z-index: 5;
@@ -60,11 +60,54 @@
     font-family:arial;
     font-weight:bold;
     font-size: clamp(0.5rem, 1rem, 2.5rem);
-    animation: slideInUp 1s ease-out forwards;
+    animation: slideInLeft 0.9s ease-out forwards;
     transition: right 0.1s ease-in-out;
     cursor: pointer;
 }
 
+#About {
+    background-color:rgb(98, 176, 221);
+    width: 70px;
+    height: 50px;
+    position:absolute;
+    left: 7%;
+    top:20%;
+    border-radius: 40vw;
+    z-index: 5;
+    box-shadow: 0 9px 9px rgba(0, 0, 0, 0.607);
+    justify-content:center;
+    display:flex;
+    align-items:center;
+    color:rgb(48, 46, 46);
+    font-family:arial;
+    font-weight:bold;
+    font-size: clamp(0.5rem, 1rem, 2.5rem);
+    animation: slideInLeft 0.5s ease-out forwards;
+    transition: right 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+#Work {
+    background-color:rgb(228, 141, 82);
+    width: 60px;
+    height: 50px;
+    position:absolute;
+    left: 40%;
+    top:20%;
+    border-radius: 40vw;
+    z-index: 5;
+    box-shadow: 0 9px 9px rgba(0, 0, 0, 0.607);
+    justify-content:center;
+    display:flex;
+    align-items:center;
+    color:rgb(48, 46, 46);
+    font-family:arial;
+    font-weight:bold;
+    font-size: clamp(0.5rem, 1rem, 2.5rem);
+    animation: slideInLeft 0.7s ease-out forwards;
+    transition: right 0.1s ease-in-out;
+    cursor: pointer;
+}
 
 #Python, #Java, #Javascript, #HTML, #CSS {
     padding: 1vw;
