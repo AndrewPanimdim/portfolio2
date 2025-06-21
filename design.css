@@ -31,7 +31,7 @@
 
 #navigation {
     position: fixed;
-    bottom: 10%;               
+    bottom: 3%;               
     left: 50%;                 
     transform: translateX(-50%); 
     background-color: rgba(74, 71, 71, 0.344);
