@@ -47,6 +47,7 @@ projectsButton.addEventListener('click', () => {
 });
 
 
+
 /*function for sliding right contents*/ 
 
 function AnimationSlideInRight(selector, animationClass = 'slideRight', threshold = 0.5) {

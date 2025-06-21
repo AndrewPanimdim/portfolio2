@@ -124,8 +124,8 @@
     width:15vw;
     height:90px;
     position:absolute;
-    right: 5%;
-    top:25%;
+    right: 1%;
+    top:3%;
     border-radius: 40vw;
     z-index: 5;
     box-shadow: 0 9px 9px rgba(0, 0, 0, 0.607);
@@ -182,6 +182,12 @@
     z-index:3;
 }
 
+.schoolbutton:hover, .personalbutton:hover, .contactsbutton:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+
+}
 
 .schoolbutton {
     position: absolute;
@@ -233,7 +239,7 @@
 
 #AndrewsInformation{
     color: aliceblue;
-    font-size: clamp(0.7rem, 1.5vw, 5rem);
+    font-size: clamp(0.6rem, 1.5vw, 5rem);
     font-family: Arial, Helvetica, sans-serif;
     position:absolute;
     right: 1%;
@@ -265,7 +271,7 @@
     opacity:0;
 }
 
-
+/*animation names*/
 
 
 .block {
@@ -397,7 +403,10 @@
     }
 
 
-
+#Projects:hover {
+    background-color:rgba(107, 67, 119, 0.952);
+    transition: background-color 0.3s ease-in-out;
+}
 
 /*modular animations for the website*/
 
