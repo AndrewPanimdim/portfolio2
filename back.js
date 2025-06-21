@@ -38,7 +38,7 @@ AnimationSlideInLeft('#furthermore')
 
 /*navigation function*/
 
-const projectsButton = document.getElementById('Projects');
+const projectsButton = document.getElementById('More');
 const overlay1 = document.getElementById('overlay');
 
 projectsButton.addEventListener('click', () => {
@@ -46,6 +46,14 @@ projectsButton.addEventListener('click', () => {
   overlay1.classList.toggle('visible');
 });
 
+const changetext = document.getElementById('More');
+changetext.addEventListener('click', ()=> {
+  if (changetext.textContent === 'More') {
+    changetext.textContent = 'back';
+  }else{
+    changetext.textContent ='More';
+  }
+})
 
 
 /*function for sliding right contents*/ 

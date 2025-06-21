@@ -119,10 +119,10 @@
 
 /*home navigation*/
 
-#Projects {
+#More {
     background-color:rgb(62, 40, 69);
     width:15vw;
-    height:90px;
+    height:80px;
     position:absolute;
     right: 1%;
     top:3%;
@@ -135,7 +135,7 @@
     color:white;
     font-family:arial;
     font-weight:bold;
-    font-size: clamp(0.5rem, 3vw, 2.5rem);
+    font-size: clamp(0.5rem, 4vw, 2.5rem);
     animation: slideInUp 1s ease-out forwards;
     transition: right 0.1s ease-in-out;
     cursor: pointer;
@@ -182,7 +182,7 @@
     z-index:3;
 }
 
-.schoolbutton:hover, .personalbutton:hover, .contactsbutton:hover {
+.schoolbutton:hover, .personalbutton:hover, .contactsbutton:hover, #More:hover {
     background-color: rgba(255, 255, 255, 0.2);
     transition: background-color 0.3s ease-in-out;
     cursor: pointer;
