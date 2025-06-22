@@ -4,7 +4,7 @@
     position: absolute;
     top: 1%;
     left: 1.5%;
-    font-family: arial;
+    font-family: 'Bungee', cursive;
     color: aliceblue;
     height:5rem;
 }
@@ -36,7 +36,7 @@
     transform: translateX(-50%); 
     background-color: rgba(74, 71, 71, 0.344);
     width: 280px;
-    height: 80px;
+    height: 70px;
     border-radius: 45px;
     z-index: 10;
 }
@@ -49,10 +49,10 @@
     height: 50px;
     position:absolute;
     right: 7%;
-    top:20%;
+    top:15%;
     border-radius: 40vw;
     z-index: 5;
-    box-shadow: 0 9px 9px rgba(0, 0, 0, 0.607);
+    box-shadow: 0 9px 9px rgba(0, 0, 0, 0.367);
     justify-content:center;
     display:flex;
     align-items:center;
@@ -71,10 +71,10 @@
     height: 50px;
     position:absolute;
     left: 7%;
-    top:20%;
+    top:15%;
     border-radius: 40vw;
     z-index: 5;
-    box-shadow: 0 9px 9px rgba(0, 0, 0, 0.607);
+    box-shadow: 0 9px 9px rgba(0, 0, 0, 0.367);
     justify-content:center;
     display:flex;
     align-items:center;
@@ -93,10 +93,10 @@
     height: 50px;
     position:absolute;
     left:37.5%;
-    top:20%;
+    top:15%;
     border-radius: 40vw;
     z-index: 5;
-    box-shadow: 0 9px 9px rgba(0, 0, 0, 0.607);
+    box-shadow: 0 9px 9px rgba(0, 0, 0, 0.367);
     justify-content:center;
     display:flex;
     align-items:center;
@@ -196,18 +196,6 @@
 
 /*bottom overlay*/
 
-#overlay {
-    position:fixed;
-    bottom:-110%; 
-    left:0%;
-    width:100%;
-    background-color:black;
-    height:100%;
-    z-index:4;
-    animation: slideInUp 1s ease-out forwards;
-    transition: bottom 0.5s ease-in-out;
-    color:white;
-}
 
 #overlay.visible {
     bottom:0%;
@@ -233,7 +221,7 @@
     font-family: Arial, Helvetica, sans-serif;
     position:absolute;
     right: 1%;
-    top: 130%; 
+    top: 120%; 
     font-weight: bold;
     width:55vw;
     height: 20vw;
@@ -252,7 +240,7 @@
     font-family:arial;
     font-weight:bold;
     position:absolute;
-    top:135%;
+    top:125%;
     z-index:2;
     width:60vw;
     height:auto;
