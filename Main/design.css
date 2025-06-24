@@ -12,7 +12,7 @@
 
 #greetingsFirstName,
 #greetingsLastName {
-    font-size: clamp(1rem, calc(7vw + 2.8em), 1400rem);
+    font-size: clamp(0.8rem, calc(7vw + 2.8em), 1400rem);
     font-weight: bold;
     animation-duration: 0.8s;
     animation-fill-mode: forwards;
