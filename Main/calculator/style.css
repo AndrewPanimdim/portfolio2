@@ -1,0 +1,227 @@
+.Andrew{
+    position:absolute;
+    top:0vw;
+    left:2vw;
+    font-family: 'Bungee', cursive;
+    font-weight: bold;
+    font-size:5vw;
+    width:10vw;
+    animation: slidein 0.5s ease-out;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity:0;
+    z-index:0;
+}
+
+
+@keyframes slidein{
+ from {
+transform:translate(-500px);
+opacity:0;
+ }  to {
+transform:translate(0);
+opacity:1;
+ } 
+}
+
+.html, .Javascript, .css {
+    width:10vw;
+    height:4vw;
+    background-color:rgb(65, 63, 63);
+    border-radius: 1vw;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:absolute;
+    left:6%;
+    font-weight:bold;
+    font-family:bungee
+    
+
+    
+}
+
+.html {
+    top:40%;
+    animation: slideup 0.5s ease-out;
+    animation-delay: 2s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity:0;
+    background-color:orange;
+}
+
+.css {
+    top:50%;
+    animation: slideup 0.5s ease-out;
+    animation-delay: 2.5s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity:0;
+    background-color:rgb(86, 150, 198);
+    color:black;
+}
+
+.Javascript{
+    top:60%;
+    animation: slideup 0.5s ease-out;
+    animation-delay: 3s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity:0;
+    background-color:rgb(209, 209, 23);
+    color:black;
+    
+}
+
+
+
+
+@keyframes slideup {
+from { transform:translateY(30PX);opacity:0;}
+to {transform:translateY(0); opacity:1;}
+}
+
+
+
+
+
+
+#body {
+    background-color: rgb(9, 9, 9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+
+#calculator {
+    height: 60%;
+    width: 90%;
+    max-width: 400px;
+    background-color: rgb(50, 49, 49);
+    padding: clamp(10px, 5vw, 20px);
+    padding-top: 120px;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 10px;
+    animation: slideright 0.5s ease-out;
+    animation-delay: 0.5s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity:0;
+    z-index:5;
+}
+
+
+
+
+
+@keyframes slideright{
+from{ transform:translateX(500PX); opacity:0;}
+to { transform:translateX(0); opacity:1;}
+
+}
+
+
+#result {
+    position: absolute;
+    top: 5%;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background-color: rgb(31, 31, 31);
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-x: auto;
+}
+
+.button-row {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 70%;
+    gap: 8px;
+}
+
+.numbers {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 3;
+    gap: 8px;
+    align-content: flex-end;
+    justify-content: space-between;
+}
+
+.operators {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 8px;
+    justify-content: space-between;
+    
+}
+
+ 
+
+/* Shared button style */
+.numbers > div,
+.operators > div {
+    flex: 1 1 30%;
+    height: 50px;
+    background-color: rgb(57, 58, 58);
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+}
+
+
+#one:hover, #two:hover, #three:hover, #four:hover, #five:hover, #six:hover, #seven:hover, #eight:hover, #nine:hover, #zero:hover, #dot:hover {
+    background-color: rgb(34, 34, 36);
+}
+
+#plus, #minus, #divide, #multiply, #delete, #clear{
+    background-color: rgba(39, 39, 41, 0.793);
+}
+
+#plus:hover, #minus:hover, #divide:hover, #multiply:hover, #delete:hover, #clear:hover{
+    background-color: rgb(57, 58, 58);
+}
+
+#equal {
+    background-color:green;
+}
+
+#equal:hover{
+    background-color:rgb(7, 101, 7);
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <link href="https://fonts.googleapis.com/css?family=Bungee&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Calculator</title>
+
+</head>
+
+<body id="body" style="color:white;">
+
+    <h1 class="Andrew">Andrew Panimdim</h1>
+    <div class="adjust">
+    <div class ="html">Html</div>
+    <div class ="css">Css</div>
+    <div class="Javascript">Javascript</div>
+    </div>
+    
+    <div id="calculator">
+    <div id="result"></div>
+    <div class="button-row">
+        <div class="numbers">
+            <div id="seven" onclick="appendValue(this)">7</div>
+            <div id="eight" onclick="appendValue(this)">8</div>
+            <div id="nine" onclick="appendValue(this)">9</div>
+            <div id="four" onclick="appendValue(this)">4</div>
+            <div id="five" onclick="appendValue(this)">5</div>
+            <div id="six" onclick="appendValue(this)">6</div>
+            <div id="one" onclick="appendValue(this)">1</div>
+            <div id="two" onclick="appendValue(this)">2</div>
+            <div id="three" onclick="appendValue(this)">3</div>
+            <div id="zero" onclick="appendValue(this)">0</div>
+            <div id="dot" onclick="appendValue(this)">.</div>
+            <div id="clear" onclick="clearResult()">C</div>
+        </div>
+        <div class="operators">
+            <div id="plus" onclick="appendValue(this)">+</div>
+            <div id="minus" onclick="appendValue(this)">-</div>
+            <div id="multiply" onclick="appendValue(this)">*</div>
+            <div id="divide" onclick="appendValue(this)">/</div>
+            <div id="equal" onclick="calculateResult()">=</div>
+            <div id="delete" onclick="deleteLastInput()">⌫</div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+<script src="js.js"></script>
+
+</html>
+
+
