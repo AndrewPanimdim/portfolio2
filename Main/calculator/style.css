@@ -1,277 +1,277 @@
-/* Default styling for large screens */
+/* ========== Keyframes ========== */
+@keyframes slidein {
+  from { transform: translateX(-500px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideup {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes appear {
+  from { opacity: 0; scale: 0; }
+  to { opacity: 1; scale: 1; }
+}
+
+@keyframes slideright {
+  from { transform: translateX(500px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+/* ========== Headings ========== */
 .Andrew, .Calcu {
   position: absolute;
   top: -10%;
-  left: 25%;
+  left: 2%;
   font-family: 'Bungee', cursive;
   font-weight: bold;
   font-size: clamp(2rem, 7vw, 7rem);
-  animation: slidein 0.5s ease-out;
-  animation-delay: 1s;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
+  animation: slidein 1s ease-out 1s forwards;
   opacity: 0;
   z-index: 10;
 }
 
-@media (max-width: 600px) {
-  .Andrew, .Calcu {
-    top: 10px;
-    left: auto;
-    right: 10px;
-    font-size: clamp(2.4rem, 7vw, 5rem); /* slightly smaller on small screens */
-    text-align: right;
-    width: auto;
-    max-width: 80%;
-  }
-}
-
-
-
-
 .Andrew {
-    position:absolute;
-    top:120%;
-    left:15vw;
-    font-size: clamp(1.8rem, calc(2vw + 1rem), 5rem);
+  top: 15%;
+  font-size: clamp(1.8rem, calc(2vw + 1rem), 5rem);
+  animation-delay: 1.2s;
 }
 
-
-@keyframes slidein{
- from {
-transform:translate(-500px);
-opacity:0;
- }  to {
-transform:translate(0);
-opacity:1;
- } 
+/* ========== Summary Section ========== */
+.summary {
+  position: fixed;
+  top: 36%;
+  width: 35vw;
+  height: 26vw;
+  background-color: transparent;
+  font-family: bungee;
+  font-size: 1.2rem;
+  border-radius: 40px;
+  word-spacing: 2px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  animation: appear linear;
+  animation-timeline: view();
 }
 
+.summary.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ========== Language Used Animation ========== */
+.languangeused {
+  animation: slidein 0.8s ease-out 1s forwards;
+  opacity: 0;
+}
+
+/* ========== Language Tech Buttons ========== */
 .html, .Javascript, .css {
-    width: 10vw;
-    height: 4vw;
-    background-color: rgb(65, 63, 63);
-    border-radius: 1vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    font-family: bungee;
-    font-size: 1vw; /* default font size */
+  width: 10vw;
+  height: 4vw;
+  background-color: rgb(65, 63, 63);
+  border-radius: 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-family: bungee;
+  font-size: 1vw;
+  opacity: 0;
+  animation: slideup 1s ease-out forwards;
 }
-
-/* Make size bigger and more readable on smaller screens */
-@media (max-width: 600px) {
-  .html, .Javascript, .css {
-    width: 100px;
-    height: 32px;
-    font-size: 1rem; /* larger readable text */
-    border-radius: 8px;
-    padding: 5px 10px;
-  }
-}
-
 
 .html {
-    animation: slideup 0.5s ease-out;
-    animation-delay: 2s;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    opacity:0;
-    background-color:orange;
+  background-color: orange;
+  color: black;
+  animation-delay: 2s;
 }
 
 .css {
-  
-    animation: slideup 0.5s ease-out;
-    animation-delay: 2.5s;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    opacity:0;
-    background-color:rgb(86, 150, 198);
-    color:black;
+  background-color: rgb(86, 150, 198);
+  color: black;
+  animation-delay: 2.5s;
 }
 
-.Javascript{
-    
-    animation: slideup 0.5s ease-out;
-    animation-delay: 3s;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    opacity:0;
-    background-color:rgb(209, 209, 23);
-    color:black;
-    
+.Javascript {
+  background-color: rgb(209, 209, 23);
+  color: black;
+  animation-delay: 3s;
 }
 
-.summary {
-    width:3vw;
-    height:3vw;
-    background-color:cadetblue;
-    position:absolute;
-    top:150%;
+/* ========== Weight Image ========== */
+.weight {
+  position: absolute;
+  top: 127%;
+  width: 30vw;
+  height: 30vw;
 }
 
-
-.adjust{
-    width:30vw;
-    height:auto;
-    position:absolute;
-    top:0px;
-    left:0px;
-    background-color:rgba(255, 255, 255, 0);
-    display: flex;              /* Enable Flexbox */
-  flex-direction: column;     /* Stack children vertically */
-  align-items: flex-start;    /* Align to left (or use center if you prefer) */
-  gap: 10px;                  /* Space between items */
-  padding: 10px;  
+/* ========== Adjust Container ========== */
+.adjust {
+  position: fixed;
+  top: 30%;
+  left: 12%;
+  width: 30vw;
+  height: auto;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px;
+  font-family: bungee;
 }
 
-
-@keyframes slideup {
-from { transform:translateY(30PX);opacity:0;}
-to {transform:translateY(0); opacity:1;}
-}
-
-
-
-
-
-
+/* ========== Calculator Section ========== */
 #body {
-    background-color: rgb(9, 9, 9);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
+  background-color: rgb(9, 9, 9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
-
 
 #calculator {
-    height: 60%;
-    width: 90%;
-    max-width: 400px;
-    background-color: rgb(50, 49, 49);
-    padding: clamp(10px, 5vw, 20px);
-    padding-top: 120px;
-    box-sizing: border-box;
-    position: relative;
-    border-radius: 10px;
-    animation: slideright 0.5s ease-out;
-    animation-delay: 0.5s;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    opacity:0;
-    z-index:5;
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  height: 60%;
+  background-color: rgb(50, 49, 49);
+  padding: clamp(10px, 5vw, 20px);
+  padding-top: 120px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  animation: slideup 0.5s ease-out forwards;
+  opacity: 0;
+  z-index: 5;
 }
-
-
-
-
-
-@keyframes slideright{
-from{ transform:translateX(500PX); opacity:0;}
-to { transform:translateX(0); opacity:1;}
-
-}
-
 
 #result {
-    position: absolute;
-    top: 5%;
-    left: 0;
-    width: 100%;
-    height: 20%;
-    background-color: rgb(31, 31, 31);
-    color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    border-radius: 5px;
-    font-size: 1.5rem;
-    padding: 10px;
-    box-sizing: border-box;
-    overflow-x: auto;
+  position: absolute;
+  top: 5%;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background-color: rgb(31, 31, 31);
+  color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  overflow-x: auto;
 }
 
+/* ========== Buttons ========== */
 .button-row {
-    display: flex;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 10px;
-    box-sizing: border-box;
-    height: 70%;
-    gap: 8px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  padding: 10px;
+  display: flex;
+  gap: 8px;
+  box-sizing: border-box;
 }
 
 .numbers {
-    display: flex;
-    flex-wrap: wrap;
-    flex: 3;
-    gap: 8px;
-    align-content: flex-end;
-    justify-content: space-between;
+  flex: 3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-end;
+  gap: 8px;
 }
 
 .operators {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    gap: 8px;
-    justify-content: space-between;
-    
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
 }
 
- 
-
-/* Shared button style */
 .numbers > div,
 .operators > div {
-    flex: 1 1 30%;
-    height: 50px;
-    background-color: rgb(57, 58, 58);
-    color: white;
-    text-align: center;
-    font-size: 1.2rem;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-    box-sizing: border-box;
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+  flex: 1 1 30%;
+  height: 50px;
+  background-color: rgb(57, 58, 58);
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
 }
 
-
-#one:hover, #two:hover, #three:hover, #four:hover, #five:hover, #six:hover, #seven:hover, #eight:hover, #nine:hover, #zero:hover, #dot:hover {
-    background-color: rgb(34, 34, 36);
+/* ========== Button Hover States ========== */
+#one:hover, #two:hover, #three:hover, #four:hover, #five:hover,
+#six:hover, #seven:hover, #eight:hover, #nine:hover, #zero:hover, #dot:hover {
+  background-color: rgb(34, 34, 36);
 }
 
-#plus, #minus, #divide, #multiply, #delete, #clear{
-    background-color: rgba(39, 39, 41, 0.793);
+#plus, #minus, #divide, #multiply, #delete, #clear {
+  background-color: rgba(39, 39, 41, 0.793);
 }
 
-#plus:hover, #minus:hover, #divide:hover, #multiply:hover, #delete:hover, #clear:hover{
-    background-color: rgb(57, 58, 58);
+#plus:hover, #minus:hover, #divide:hover, #multiply:hover, #delete:hover, #clear:hover {
+  background-color: rgb(57, 58, 58);
 }
 
 #equal {
-    background-color:green;
+  background-color: green;
 }
 
-#equal:hover{
-    background-color:rgb(7, 101, 7);
+#equal:hover {
+  background-color: rgb(7, 101, 7);
 }
 
+/* ========== Media Queries ========== */
+@media (max-width: 600px) {
+  .Andrew {
+    top: 10px;
+    right: 10%;
+    font-size: 1rem;
+  }
 
+  .Calcu {
+    top: 0%;
+    left: 10px;
+    right: auto;
+    font-size: clamp(3.4rem, 7vw, 5rem);
+    text-align: right;
+    max-width: 80%;
+  }
 
+  .summary {
+    width: 100%;
+    font-size: 1rem;
+  }
 
+  .html, .Javascript, .css {
+    width: 100px;
+    height: 32px;
+    font-size: 1rem;
+    border-radius: 8px;
+    padding: 5px 10px;
+  }
 
-
-
-
+  .adjust {
+    bottom: 2%;
+    top: auto;
+  }
+}
