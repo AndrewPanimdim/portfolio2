@@ -1,16 +1,39 @@
-.Andrew{
+/* Default styling for large screens */
+.Andrew, .Calcu {
+  position: absolute;
+  top: -10%;
+  left: 25%;
+  font-family: 'Bungee', cursive;
+  font-weight: bold;
+  font-size: clamp(2rem, 7vw, 7rem);
+  animation: slidein 0.5s ease-out;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  z-index: 10;
+}
+
+@media (max-width: 600px) {
+  .Andrew, .Calcu {
+    top: 10px;
+    left: auto;
+    right: 10px;
+    font-size: clamp(2.4rem, 7vw, 5rem); /* slightly smaller on small screens */
+    text-align: right;
+    width: auto;
+    max-width: 80%;
+  }
+}
+
+
+
+
+.Andrew {
     position:absolute;
-    top:0vw;
-    left:2vw;
-    font-family: 'Bungee', cursive;
-    font-weight: bold;
-    font-size:5vw;
-    width:10vw;
-    animation: slidein 1s ease-out;
-    animation-delay: 0.5s;
-    animation-fill-mode: forwards;
-    opacity:0;
-    z-index:0;
+    top:120%;
+    left:15vw;
+    font-size: clamp(1.8rem, calc(2vw + 1rem), 5rem);
 }
 
 
@@ -25,23 +48,31 @@ opacity:1;
 }
 
 .html, .Javascript, .css {
-    width:120px;
-    height: 60px;
-    background-color:rgb(65, 63, 63);
+    width: 10vw;
+    height: 4vw;
+    background-color: rgb(65, 63, 63);
     border-radius: 1vw;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    position:absolute;
-    top:10%;
-    font-weight:bold;
-    font-family:bungee ;
-    font-size: clamp(0.5rem, 1rem, 2.5rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-family: bungee;
+    font-size: 1vw; /* default font size */
+}
+
+/* Make size bigger and more readable on smaller screens */
+@media (max-width: 600px) {
+  .html, .Javascript, .css {
+    width: 100px;
+    height: 32px;
+    font-size: 1rem; /* larger readable text */
+    border-radius: 8px;
+    padding: 5px 10px;
+  }
 }
 
 
 .html {
-    left:27%;
     animation: slideup 0.5s ease-out;
     animation-delay: 2s;
     animation-duration: 1s;
@@ -51,7 +82,7 @@ opacity:1;
 }
 
 .css {
-    left:39%;
+  
     animation: slideup 0.5s ease-out;
     animation-delay: 2.5s;
     animation-duration: 1s;
@@ -62,7 +93,7 @@ opacity:1;
 }
 
 .Javascript{
-    left:51%;
+    
     animation: slideup 0.5s ease-out;
     animation-delay: 3s;
     animation-duration: 1s;
@@ -73,7 +104,28 @@ opacity:1;
     
 }
 
+.summary {
+    width:3vw;
+    height:3vw;
+    background-color:cadetblue;
+    position:absolute;
+    top:150%;
+}
 
+
+.adjust{
+    width:30vw;
+    height:auto;
+    position:absolute;
+    top:0px;
+    left:0px;
+    background-color:rgba(255, 255, 255, 0);
+    display: flex;              /* Enable Flexbox */
+  flex-direction: column;     /* Stack children vertically */
+  align-items: flex-start;    /* Align to left (or use center if you prefer) */
+  gap: 10px;                  /* Space between items */
+  padding: 10px;  
+}
 
 
 @keyframes slideup {
@@ -108,7 +160,8 @@ to {transform:translateY(0); opacity:1;}
     position: relative;
     border-radius: 10px;
     animation: slideright 0.5s ease-out;
-    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
     opacity:0;
     z-index:5;
