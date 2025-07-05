@@ -17,6 +17,7 @@ function deleteLastInput() {
 }
 
 
+
 function calculateResult() {
     const resultDiv = document.getElementById("result");
     try {
