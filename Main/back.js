@@ -34,6 +34,8 @@ function AnimationSlideInLeft(selector, animationClass = 'slideLeft', threshold 
 
 AnimationSlideInLeft('#hello');
 AnimationSlideInLeft('#furthermore')
+AnimationSlideInLeft('#Python')
+AnimationSlideInLeft('#info1')
 
 
 /*function for sliding right contents*/ 
