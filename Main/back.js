@@ -56,3 +56,14 @@ function AnimationSlideInRight(selector, animationClass = 'slideRight', threshol
 AnimationSlideInRight('#AndrewsInformation');
 
 
+
+const topDiv = document.getElementById('seemore');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 0) {
+        topDiv.classList.add('hidden');
+      } else {
+        topDiv.classList.remove('hidden');
+      }
+    });
+

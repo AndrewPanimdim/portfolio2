@@ -6,9 +6,32 @@
     left: 1.5%;
     font-family: 'Bungee', cursive;
     color: aliceblue;
-    height:5rem;
+    background-color:rgba(255, 255, 255, 0);
 }
 
+.ilike {
+    animation-name: slideInUp;
+    font-weight: bold;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    z-index: 2;
+    animation-delay: 0.6s;
+    opacity: 0;
+    font-size: clamp(0.9rem, 1vw, 10rem);
+    line-height: 1.5;
+    color: rgb(255, 255, 255);
+    
+    
+}
+
+.profile{
+    width:100%;
+    position: absolute;
+    left: 0%;
+    z-index: -1;
+    opacity: 0;
+
+}
 
 #greetingsFirstName,
 #greetingsLastName {
@@ -27,7 +50,7 @@
 
 #greetingsLastName {
     animation-name: slideInRightGreetings;
-    font-size: clamp(0.6rem, calc(6vw + 2.8em), 1400rem);
+    font-size: clamp(0.5rem, calc(5vw + 2.8em), 1400rem);
 }
 
 
@@ -42,6 +65,16 @@
     border-radius: 45px;
     z-index: 10;
 }
+
+
+
+
+
+
+
+
+
+
 
 /*home navigation*/
 
@@ -105,91 +138,7 @@
     cursor: pointer;
 }
 
-#Python, #Java, #Javascript, #HTML, #CSS {
-    padding: 1vw;
-    border-radius: 2.5vw;
-    box-shadow: 0 9px 9px rgba(0, 0, 0, 0.607);
-    font-size: clamp(1rem, 2.3vw, 5rem);
-    width:15%; 
-    height:8%;
-    color:white;
-    font-family:'bungee', cursive;
-    font-weight:bold;
-    justify-content:center;
-    display:flex;
-    align-items:center;
-    z-index:3;
-}
 
-
-/*language buttons*/
-
-#Python {
-    background-color:rgb(34, 59, 121);
-    position: absolute;
-    right:5%;
-    top:210%;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-name: slideInUp;
-    animation-delay:0.8s;
-    opacity:0;
-}
-
-
-#Java {
-    background-color:rgb(218, 76, 41);
-    position: absolute;
-    right:5%;
-    top:225%;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-name: slideInUp;
-    animation-delay:0.6s;
-    opacity:0;
-    
-}
-
-#Javascript {
-    background-color:rgb(239, 179, 116);
-    position: absolute;
-    right:5%;
-    top:240%;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-name: slideInUp;
-    animation-delay:0.4s;
-    opacity:0;
-    padding:1vw;
-    font-size: clamp(0.7rem, 2.3vw, 5rem);
-
-}
-
-#HTML {
-    background-color:rgb(224, 118, 92);
-    position: absolute;
-    right:5%;
-    top:270%;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-name: slideInUp;
-    animation-delay:0s;
-    opacity:0;
-    color:black;
-}
-
-#CSS {
-    background-color:rgb(34, 128, 156);
-    position: absolute;
-    right:5%;
-    top:255%;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-name: slideInUp;
-    animation-delay:0.2s;
-    opacity:0;
-    
-}
 
 
 /*bottom overlay*/
@@ -215,11 +164,11 @@
 
 #AndrewsInformation{
     color: aliceblue;
-    font-size: clamp(0.68rem, 1.5vw, 5rem);
+    font-size: clamp(0.67rem, 1.5vw, 5rem);
     font-family: Arial, Helvetica, sans-serif;
     position:absolute;
     right: 01%;
-    top: 120%; 
+    top: 115%; 
     font-weight: bold;
     width:55vw;
     height: 20vw;
@@ -238,29 +187,110 @@
     font-family:arial;
     font-weight:bold;
     position:absolute;
-    top:125%;
+    top:115%;
     z-index:2;
     width:60vw;
     height:auto;
     right:25%;
     background-color:rgba(0, 0, 0, 0);
     opacity:0;
+    cursor: pointer;
 }
+
+
 
 #info1 {
     position:absolute;
-    top:215%;
+    top:160%;
     z-index:2;
-    color:white;
-    width: 70%;
+    color:rgb(255, 255, 255);
     font-weight:bold;
     font-family:Arial, Helvetica, sans-serif;
     opacity:0;
     font-size: clamp(0.68rem, 1.5vw, 5rem);
-    left:5%;
+    left:28%;
+    letter-spacing: 0.3vw;
+    width: 50%;
+    background-color: black;
+    padding: 1vw;
 
     
 }
+
+/* animation appear blocks*/
+
+#one {
+  background-color: rgb(252, 252, 252);
+  width: 100%;
+  height: 300%;
+  position: absolute;
+  top: 155%;
+  left: 0;
+  z-index: 3;
+  border-radius: 5vw;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 5vh;
+}
+
+#projheader {
+  position: absolute; /* let it flow naturally */
+  top: 200%;
+  font-size: clamp(1.5em, 5vw, 5vw);
+  z-index: 10;
+  left: 37%;
+  font-family: bungee;
+  
+}
+
+
+
+#two {
+    background-color: rgb(13, 26, 54);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:60%;
+    left: 0%;
+    z-index: 8;
+    border-radius: 5vw;
+    color: rgb(245, 153, 72);
+    text-align: center;
+    
+}
+
+
+.backgroundheader {
+    position:relative;
+    top: 10%;
+    font-family: bungee;
+    font-size: clamp(1.5em, 5vw, 5vw);
+}
+
+
+.seemore {
+    position: absolute;
+    bottom: 3%;
+    right: 5%;
+    z-index: 5;
+    color: white;
+    font-size: 1.8vw;
+    animation: bouncing 1s infinite;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.seemore.hidden {
+    opacity: 0;
+    transform: translateY(10px);
+    pointer-events: none;
+}
+
+
+
+
 
 
 /*animation names*/
@@ -272,9 +302,25 @@
     animation-range: entry 0% cover 40%;
 }
 
-
 .slideUp {
     animation:slideInUp 1s ease-out forwards;
+}
+
+.blocks1 {
+    animation: slideL linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 25% ;
+}
+
+.blocks {
+    animation:appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 25% ;
+}
+
+.weyts {
+    position: absolute;
+    top: 500%;
 }
 
 
@@ -315,7 +361,7 @@
     height:40%;
     background-color: rgb(204, 137, 60); 
     position:absolute;
-    top:120%;
+    top:110%;
     left:-3%;
     z-index: 3;
     border-radius: 25px;
@@ -343,7 +389,7 @@
     height:45%;
     background-color: rgb(152, 148, 238); 
     position:absolute;
-    top:150%;
+    top:140%;
     left:-1%;
     z-index: 2;
     border-radius: 25px;
@@ -371,7 +417,7 @@
     height:20%;
     background-color: rgb(148, 235, 238); 
     position:absolute;
-    top:170%;
+    top:160%;
     left:1%;
     z-index: 2;
     border-radius: 25px;
@@ -390,6 +436,145 @@
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.629);
     animation: rotate 23s infinite;
 }
+
+.shape8 {
+    width:30%;
+    height:30%;
+    background-color: rgb(76, 153, 167); 
+    position:absolute;
+    top:140%;
+    left:-5%;
+    z-index: 0;
+    border-radius: 25px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.629);
+    animation: rotaterev 19s infinite;
+
+}
+
+
+
+
+/* Tool container in index */
+#boxcontainers {
+    width: 46%;
+    height: 30%;
+    background-color: rgba(0, 0, 0, 0.203);
+    position: absolute;
+    right: 3%;
+    top: 5%;
+    z-index: 2;
+    border-radius: 20px;
+}
+
+/* Common style for tool icons */
+.tool-icon {
+    height: 20%;
+    position: absolute;
+    z-index: 2;
+    border-radius: 20vw;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-family: bungee;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-name: slideInLeft;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Top row */
+#github {
+    width: 15%;
+    background-color: #fff;
+    left: 5%;
+    top: 13%;
+    animation-delay: 0.2s;
+}
+
+#VB {
+    width: 23%;
+    background-color: rgb(51, 93, 162);
+    color: white;
+    left: 24%;
+    top: 13%;
+    animation-delay: 0.6s;
+}
+
+#codewars {
+    width: 18%;
+    background-color: rgba(158, 16, 16, 0.981);
+    color: rgb(30, 27, 27);
+    left: 49%;
+    top: 13%;
+    animation-delay: 1s;
+}
+
+#linkedinn {
+    width: 23%;
+    background-color: rgba(209, 209, 215, 0.981);
+    color: rgba(18, 78, 187, 0.981);
+    left: 72%;
+    top: 13%;
+    animation-delay: 1.4s;
+}
+
+/* Middle row */
+#html {
+    width: 13%;
+    background-color: rgba(181, 89, 8, 0.981);
+    color: rgba(228, 219, 219, 0.981);
+    left: 5%;
+    top: 40%;
+    animation-delay: 1.8s;
+}
+
+#css {
+    width: 13%;
+    background-color: rgba(101, 162, 197, 0.981);
+    color: rgba(11, 11, 11, 0.981);
+    left: 21.5%;
+    top: 40%;
+    animation-delay: 2.2s;
+}
+
+#javascript {
+    width: 20%;
+    background-color: rgba(227, 227, 50, 0.981);
+    color: rgba(14, 14, 13, 0.981);
+    left: 38%;
+    top: 40%;
+    animation-delay: 2.6s;
+}
+
+#python {
+    width: 15%;
+    background-color: rgba(77, 113, 185, 0.981);
+    color: rgba(0, 0, 0, 0.981);
+    left: 61%;
+    top: 40%;
+    animation-delay: 3s;
+}
+
+#java {
+    width: 15%;
+    background-color: rgba(153, 45, 23, 0.981);
+    color: rgba(252, 252, 252, 0.981);
+    left: 78%;
+    top: 40%;
+    animation-delay: 3.4s;
+}
+
+/* Bottom row */
+#react {
+    width: 15%;
+    background-color: rgba(254, 253, 253, 0.981);
+    color: rgba(24, 104, 185, 0.981);
+    left: 5%;
+    top: 67%;
+    animation-delay: 3.8s;
+}
+
 
 
 
@@ -415,9 +600,29 @@
 
 /*modular animations for the website*/
 
+@keyframes bouncing {
+    0%, 100% {transform: translateY(10%);}
+    50% { transform: translateY(-10%);}
+}
+
+@keyframes disapear {
+    from {opacity: 1;}
+    to{opacity:0;}
+}
+
+
+@keyframes slideL {
+    from {
+        transform:translateX(-100%)
+    }to{
+        transform:translateX(0%);
+    }
+}
+
+
 @keyframes appear {
     from { opacity:0; scale:0.5; }
-    tp { opacity:1; scale:1;}
+    to { opacity:1; scale:1;}
 }
 
 @keyframes slideInLeft {
@@ -459,3 +664,169 @@
       from { transform: rotate(360deg); }
       to { transform: rotate(180deg); }
     }
+
+
+
+
+
+
+
+/*responsiveness*/
+
+@media (max-width: 1178px) {
+   body #boxcontainers {
+    width: 90%;
+    height: 30%;
+    position: absolute;
+    left: 5%;
+    right: auto;
+    top: 45%;
+   }
+
+   .tool-icon {
+    height: 20%;
+    position: absolute;
+    z-index: 2;
+    border-radius: 20vw;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-family: bungee;
+    font-size: 2.2vw;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-name: slideInLeft;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Top row */
+#github {
+    width: 15%;
+    background-color: #fff;
+    left: 5%;
+    top: 13%;
+    animation-delay: 0.8s;
+}
+
+#VB {
+    width: 23%;
+    background-color: rgb(51, 93, 162);
+    color: white;
+    left: 24%;
+    top: 13%;
+    animation-delay: 1.2s;
+}
+
+#codewars {
+    width: 18%;
+    background-color: rgba(158, 16, 16, 0.981);
+    color: rgb(30, 27, 27);
+    left: 49%;
+    top: 13%;
+    animation-delay: 1.6s;
+}
+
+#linkedinn {
+    width: 23%;
+    background-color: rgba(209, 209, 215, 0.981);
+    color: rgba(18, 78, 187, 0.981);
+    left: 72%;
+    top: 13%;
+    animation-delay: 2s;
+}
+
+/* Middle row */
+#html {
+    width: 13%;
+    background-color: rgba(181, 89, 8, 0.981);
+    color: rgba(228, 219, 219, 0.981);
+    left: 5%;
+    top: 40%;
+    animation-delay: 2.4s;
+}
+
+#css {
+    width: 13%;
+    background-color: rgba(101, 162, 197, 0.981);
+    color: rgba(11, 11, 11, 0.981);
+    left: 21.5%;
+    top: 40%;
+    animation-delay: 2.8s;
+}
+
+#javascript {
+    width: 20%;
+    background-color: rgba(227, 227, 50, 0.981);
+    color: rgba(14, 14, 13, 0.981);
+    left: 38%;
+    top: 40%;
+    animation-delay: 3.2s;
+}
+
+#python {
+    width: 15%;
+    background-color: rgba(77, 113, 185, 0.981);
+    color: rgba(0, 0, 0, 0.981);
+    left: 61%;
+    top: 40%;
+    animation-delay: 3.6s;
+}
+
+#java {
+    width: 15%;
+    background-color: rgba(153, 45, 23, 0.981);
+    color: rgba(252, 252, 252, 0.981);
+    left: 78%;
+    top: 40%;
+    animation-delay: 4s;
+}
+
+/* Bottom row */
+#react {
+    width: 15%;
+    background-color: rgba(254, 253, 253, 0.981);
+    color: rgba(24, 104, 185, 0.981);
+    left: 5%;
+    top: 67%;
+    animation-delay: 4.2s;
+}
+
+#AndrewsInformation{
+    color: aliceblue;
+    font-size: clamp(0.67rem, 1.5vw, 5rem);
+    font-family: Arial, Helvetica, sans-serif;
+    position:absolute;
+    right: 01%;
+    top: 100%; 
+    font-weight: bold;
+    width:55vw;
+    height: 20vw;
+    background-color: rgba(0, 0, 0, 0);
+    letter-spacing: 0.3vw;
+    line-height: 1.4;
+    z-index:2;
+    opacity:0;
+    animation-delay:.5s;
+    
+}
+
+#hello {
+    color: aliceblue;
+    font-size: clamp(1.8rem, calc(5vw + 1.2rem), 5rem);
+    font-family:arial;
+    font-weight:bold;
+    position:absolute;
+    top:105%;
+    z-index:2;
+    width:60vw;
+    height:auto;
+    right:25%;
+    background-color:rgba(0, 0, 0, 0);
+    opacity:0;
+    cursor: pointer;
+}
+
+
+
+}
