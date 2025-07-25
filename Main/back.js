@@ -57,13 +57,26 @@ AnimationSlideInRight('#AndrewsInformation');
 
 
 
-const topDiv = document.getElementById('seemore');
+function initScrollAnimations(selector, animationClass = 'animate', threshold = 0.5) {
+    const elements = document.querySelectorAll(selector);
 
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 0) {
-        topDiv.classList.add('hidden');
-      } else {
-        topDiv.classList.remove('hidden');
-      }
-    });
+    const observer = new IntersectionObserver((entries, observerInstance) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add(animationClass);
+          observerInstance.unobserve(entry.target); // Animate only once
+        }
+      });
+    }, { threshold });
 
+    elements.forEach(el => observer.observe(el));
+  }
+
+  // Example usage for your boxes:
+  initScrollAnimations('.backgroundinfo');
+  initScrollAnimations('.overview');
+  initScrollAnimations('.left_content');
+  initScrollAnimations('.educationheader');
+  initScrollAnimations('.backgroundheader');
+  
+  

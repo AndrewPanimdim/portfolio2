@@ -39,6 +39,7 @@
     animation-duration: 0.8s;
     animation-fill-mode: forwards;
     z-index: 2;
+    cursor: pointer;
 }
 
 
@@ -85,7 +86,7 @@
     position:absolute;
     right: 7%;
     top:15%;
-    border-radius: 40vw;
+    border-radius: 10vw;
     z-index: 5;
     box-shadow: 0 9px 9px rgba(0, 0, 0, 0.367);
     justify-content:center;
@@ -105,7 +106,7 @@
     position:absolute;
     left: 7%;
     top:15%;
-    border-radius: 40vw;
+    border-radius: 10vw;
     z-index: 5;
     box-shadow: 0 9px 9px rgba(0, 0, 0, 0.367);
     justify-content:center;
@@ -125,7 +126,7 @@
     position:absolute;
     left:37.5%;
     top:15%;
-    border-radius: 40vw;
+    border-radius: 10vw;
     z-index: 5;
     box-shadow: 0 9px 9px rgba(0, 0, 0, 0.367);
     justify-content:center;
@@ -158,6 +159,55 @@
     bottom:27%;
     
 }
+
+.Projects {
+    position: absolute;
+    top:20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 10vw;
+    font-size: clamp(1.5rem, 3vh, 5rem);
+    color: rgb(43, 43, 43);
+    
+}
+
+.Projects div {
+    text-align: center;
+    transition: 
+        text-shadow 0.5s cubic-bezier(0.4,0,0.2,1),
+        transform 0.5s cubic-bezier(0.4,0,0.2,1);
+    cursor: pointer;
+    animation: appearright 5s linear;
+    animation-timeline:view();
+    animation-range: entry 0% cover 44%;
+
+}
+
+.Projects div:hover {
+    transform: scale(2);
+
+}
+
+.Projects div a {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    color: inherit;
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+.Projects div:hover a {
+    opacity: 1;
+}
+
+@keyframes appearright {
+    from {opacity: 0; transform: translate(300%);}
+    to { opacity: 1; transform: translate(0%);}
+}
+
+
 
 
 /* hello im andrew and im an aspiring full stack developer*/
@@ -222,7 +272,7 @@
 #one {
   background-color: rgb(252, 252, 252);
   width: 100%;
-  height: 300%;
+  height: 400%;
   position: absolute;
   top: 155%;
   left: 0;
@@ -239,26 +289,53 @@
 #projheader {
   position: absolute; /* let it flow naturally */
   top: 200%;
-  font-size: clamp(1.5em, 5vw, 5vw);
+  font-size: clamp(1.5em, 9vw, 9vw);
   z-index: 10;
-  left: 37%;
-  font-family: bungee;
-  
+  left: 27%;
+  font-family: bungee; 
 }
 
+.signin-signup {
+    position: absolute;
+    top: 20%;
+    left: 4%;
+    cursor: pointer;
+    text-shadow: none;
+    transition: text-shadow 0.5s ease;
+}
+
+.signin-signup:hover {
+    text-shadow: 0 8px 32px rgba(0, 0, 0, 0.629);
+}
+
+
+.signinvid {
+    position:absolute;
+    top: 20%;
+    right: 10%;
+    border-radius:20px;
+    transition: box-shadow 1s ease;
+}
+
+.signinvid:hover {
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.629);
+    transition: 0.5s;
+}
 
 
 #two {
     background-color: rgb(13, 26, 54);
     width: 100%;
-    height: 100%;
+    height: 80%;
     position: absolute;
-    top:60%;
+    top:65%;
     left: 0%;
     z-index: 8;
     border-radius: 5vw;
     color: rgb(245, 153, 72);
     text-align: center;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
     
 }
 
@@ -267,31 +344,174 @@
     position:relative;
     top: 10%;
     font-family: bungee;
-    font-size: clamp(1.5em, 5vw, 5vw);
+    font-size: clamp(1.5em, 8vw, 9vw);
+
+    animation-name: appear ;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
 }
 
+.backgroundheader.animate {
+    animation-play-state: running;
+}
 
-.seemore {
+.backgroundinfo {
     position: absolute;
-    bottom: 3%;
+    top: 21%;
     right: 5%;
-    z-index: 5;
-    color: white;
-    font-size: 1.8vw;
-    animation: bouncing 1s infinite;
-    transition: opacity 0.4s ease, transform 0.4s ease;
+    width: 25%;
+    letter-spacing: 0.1vw;
+    line-height: 4vh;
+    background-color: rgba(0, 0, 0, 0.279);
+    padding: 1.5vw;
+    border-radius: 2vw;
+    text-align: justify;
+    content: center;
+    font-size: clamp(0.5rem, 1rem, 4rem);
+    color: rgb(206, 205, 205);
+
+    animation-name: slideInLeft;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    
+    
 }
 
-.seemore.hidden {
-    opacity: 0;
-    transform: translateY(10px);
-    pointer-events: none;
+.backgroundinfo.animate {
+    animation-play-state: running;
 }
 
+@keyframes slideInLeft {
+      from { transform: translateX(4%); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
 
 
+.overview {
+    width: 10%;
+    font-size: clamp(0.5rem, 1.5vw, 6rem);
 
+    animation-name: slideUp;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
 
+    
+}
+
+.overview.animate {
+    animation-play-state: running;
+}
+
+@keyframes slideUp {
+    from {opacity: 0; transform: translateY(50px);}
+    to { opacity: 1; transform: translateY(0);}
+  }
+
+.left_content {
+    border-radius: 60% 95% 90% 85% / 90% 90% 50% 70%;
+    background-color: rgb(0, 0, 0);
+    width: 56%;
+    height: 27%;
+    position: absolute;
+    top: 18%;
+    left: 3%;
+
+    animation-name: slideUp;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+
+}
+
+.left_content.animate {
+    animation-play-state: running;
+}
+
+.educationheader {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    font-size: clamp(0.5rem, calc(1rem + 5vw), 6rem);
+    animation-name: slideUp;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+
+}
+
+.educationheader.animate {
+    animation-play-state: running;
+}
+
+.rotatingbox {
+    position: absolute;
+    top: 50.4%;
+    width: 10%;
+    height: 3%;
+    background-color: rgb(65, 157, 227);
+    animation: rotate 5s infinite;
+    border-radius:1vw ;
+    left: -2%;
+}
+
+@keyframes rotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    .educontainer {
+    position: absolute;
+    top:60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 10vw;
+    font-size: clamp(1.5rem, 3vh, 5rem);
+    color: rgb(255, 255, 255);
+    left: 14%;
+    width: 30%;
+    font-family: bungee;
+    }
+
+    .educontainer div {
+    text-align: center;
+    transition: 
+        text-shadow 0.5s cubic-bezier(0.4,0,0.2,1),
+        transform 0.5s cubic-bezier(0.4,0,0.2,1);
+    cursor: pointer;
+    animation: appearright 5s linear;
+    animation-timeline:view();
+    animation-range: entry 0% cover 13%;
+
+}
+
+.edudiv {
+    border-radius: 50% 70% 90% 90% / 70% 90% 40% 50%;
+    width: 40%;
+    height: 20%;
+    position: absolute;
+    top: 57%;
+    right: 0%;
+    background-color: rgb(0, 0, 0);
+}
+
+.feedback {
+    position: absolute;
+    bottom: 1%;
+}
+
+.divline {
+    background-color: white;
+    height: 9%;
+    width: 1%;
+    position: absolute;
+    bottom: 0%;
+    left: 11%;
+}
 
 /*animation names*/
 
@@ -458,7 +678,7 @@
 #boxcontainers {
     width: 46%;
     height: 30%;
-    background-color: rgba(0, 0, 0, 0.203);
+    background-color: rgba(0, 0, 0, 0);
     position: absolute;
     right: 3%;
     top: 5%;
@@ -483,6 +703,10 @@
     cursor: pointer;
 }
 
+.tool-icon:hover {
+    box-shadow: 0px 9px 9px rgba(0, 0, 0, 0.525);
+}
+
 /* Top row */
 #github {
     width: 15%;
@@ -491,6 +715,8 @@
     top: 13%;
     animation-delay: 0.2s;
 }
+
+
 
 #VB {
     width: 23%;
